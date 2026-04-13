@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>庄河剪纸 · 动态艺术展</title>
+  <meta name="description" content="动态复杂的庄河剪纸展示页面，融合传统纹样与现代交互效果。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./zhuanghe-papercut.css" />
+</head>
+<body>
+  <div class="ambient">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <span class="glow glow-c"></span>
+    <div class="particles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero__text">
+      <p class="badge">国家级非遗视觉叙事</p>
+      <h1>庄河剪纸 · 千层红影</h1>
+      <p>
+        以“鱼、鹤、牡丹、海浪”四大意象为骨，融入分层剪影、光流、转场动画，
+        构建一个可滚动浏览的数字剪纸长卷。
+      </p>
+      <div class="hero__actions">
+        <a href="#gallery" class="btn btn--solid">进入展厅</a>
+        <a href="#craft" class="btn btn--ghost">工艺故事</a>
+      </div>
+    </div>
+
+    <div class="hero__papercut">
+      <div class="paper-layer layer-1"></div>
+      <div class="paper-layer layer-2"></div>
+      <div class="paper-layer layer-3"></div>
+      <div class="paper-layer layer-4"></div>
+      <div class="paper-core">
+        <svg viewBox="0 0 300 300" aria-hidden="true">
+          <defs>
+            <radialGradient id="petalGlow" cx="50%" cy="50%" r="60%">
+              <stop offset="0%" stop-color="#ffd2b8" />
+              <stop offset="100%" stop-color="#ff6f61" />
+            </radialGradient>
+          </defs>
+          <g class="rotor">
+            <path d="M150 32 C178 76, 220 86, 238 130 C202 126, 172 144, 150 176 C128 144, 98 126, 62 130 C80 86, 122 76, 150 32Z" fill="url(#petalGlow)" />
+            <path d="M150 268 C122 224, 80 214, 62 170 C98 174, 128 156, 150 124 C172 156, 202 174, 238 170 C220 214, 178 224, 150 268Z" fill="#ff8a80" />
+            <path d="M32 150 C76 122, 86 80, 130 62 C126 98, 144 128, 176 150 C144 172, 126 202, 130 238 C86 220, 76 178, 32 150Z" fill="#ff5b55" />
+            <path d="M268 150 C224 178, 214 220, 170 238 C174 202, 156 172, 124 150 C156 128, 174 98, 170 62 C214 80, 224 122, 268 150Z" fill="#d91f26" />
+          </g>
+          <circle cx="150" cy="150" r="28" fill="#fff3e9" />
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="gallery" class="section section--gallery">
+      <div class="section__head">
+        <h2>主题展品</h2>
+        <p>每一幅作品都将庄河民俗叙事转译为现代视觉语言。</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="card">
+          <div class="card__stamp">鱼跃丰年</div>
+          <h3>《潮生福至》</h3>
+          <p>双鱼剪影与海浪回纹叠加，象征渔家丰收与代代有余。</p>
+        </article>
+        <article class="card">
+          <div class="card__stamp">鹤舞辽南</div>
+          <h3>《鹤影长鸣》</h3>
+          <p>丹顶鹤展翼纹样被拆分成七层纸面，呈现呼吸式律动。</p>
+        </article>
+        <article class="card">
+          <div class="card__stamp">花开并蒂</div>
+          <h3>《牡丹映雪》</h3>
+          <p>牡丹花心采用镂空透景结构，配合光晕产生灯影效果。</p>
+        </article>
+        <article class="card">
+          <div class="card__stamp">瑞兽守门</div>
+          <h3>《门神新语》</h3>
+          <p>传统门笺纹路经对称算法重构，强化节庆仪式感。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--photo">
+      <div class="section__head">
+        <h2>图片展陈</h2>
+        <p>精选剪纸实拍图，点击缩略图即可切换大图展示。</p>
+      </div>
+      <div class="photo-wall">
+        <figure class="photo-main">
+          <img
+            id="mainArtwork"
+            src="https://ts1.tc.mm.bing.net/th/id/R-C.6a7c9e7ae07088859c67e2df8c77b69c?rik=OZYOXU6vFHYi%2bw&riu=http%3a%2f%2fp3.itc.cn%2fq_70%2fimages03%2f20210111%2f2934001060cb4d67a76c4e9647e7a848.jpeg&ehk=or8ccz2KezBUelHBtsssr%2bXccrpwYn21MthLJ2YNqG4%3d&risl=&pid=ImgRaw&r=0"
+            alt="庄河剪纸作品主图展示"
+            loading="eager"
+          />
+          <figcaption id="mainCaption">《喜上眉梢·婚庆套系剪纸》</figcaption>
+        </figure>
+        <div class="photo-thumbs" role="list" aria-label="剪纸作品缩略图">
+          <button class="thumb is-active" data-full="https://i.ibb.co/s9yGz2mN/8b60a0d99744b57c05d2f04fd62c3c67.jpg" data-title="《喜上眉梢·婚庆套系剪纸》" aria-label="查看喜上眉梢">
+            <img src="https://i.ibb.co/s9yGz2mN/8b60a0d99744b57c05d2f04fd62c3c67.jpg" alt="剪纸花纹局部" loading="lazy" />
+          </button>
+          <button class="thumb" data-full="https://i.ibb.co/KxjyfmwF/749a189da150d75dac92e373654d7823.jpg" data-title="《五福临门·五狮团花》" aria-label="查看《五福临门·五狮团花》">
+            <img src="https://i.ibb.co/KxjyfmwF/749a189da150d75dac92e373654d7823.jpg" alt="红色窗花剪纸" loading="lazy" />
+          </button>
+          <button class="thumb" data-full="https://i.ibb.co/93zVBtGx/fcfda56b8b4208f0b212194164cd82e1.jpg" data-title="《百年辉煌 国泰民安》" aria-label="《百年辉煌 国泰民安》">
+            <img src="https://i.ibb.co/93zVBtGx/fcfda56b8b4208f0b212194164cd82e1.jpg" alt="剪纸工艺细节" loading="lazy" />
+          </button>
+          <button class="thumb" data-full="https://i.ibb.co/Q3rTf0Nc/f425cefd19a9688071b9f2062b9817cd.jpg" data-title="《谋幸福保和平》" aria-label="查看谋幸福保和平">
+            <img src="https://i.ibb.co/Q3rTf0Nc/f425cefd19a9688071b9f2062b9817cd.jpg" alt="传统手工红纸艺术" loading="lazy" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="craft" class="section section--timeline">
+      <div class="section__head">
+        <h2>工艺流程</h2>
+        <p>庄河剪纸讲究“意在刀先、刀随纸走”，每一步都关系到最终神韵。</p>
+      </div>
+      <div class="timeline">
+        <article class="node">
+          <span>01</span>
+          <h3>择纸与润色</h3>
+          <p>选用纤维细密的红宣或皮纸，先做轻度润纸处理，保证下刀不断裂。</p>
+        </article>
+        <article class="node">
+          <span>02</span>
+          <h3>折纸与定稿</h3>
+          <p>按对称、四方连续等构图法折叠纸张，用炭笔快速勾勒主纹与辅纹。</p>
+        </article>
+        <article class="node">
+          <span>03</span>
+          <h3>起刀与行刀</h3>
+          <p>先内后外、先细后粗，阴刻阳刻交替推进，形成“虚实相生”的层次。</p>
+        </article>
+        <article class="node">
+          <span>04</span>
+          <h3>挑连与修边</h3>
+          <p>将连刀处细致挑开，修整毛边，让纹样边缘利落并保持图案完整性。</p>
+        </article>
+        <article class="node">
+          <span>05</span>
+          <h3>托裱与装陈</h3>
+          <p>作品托裱在米色底纸上，借底色反差突出镂空细节，最终装框展陈。</p>
+        </article>
+      </div>
+      <div class="craft-note">
+        <h3>工艺要点</h3>
+        <ul>
+          <li>“刀口如笔锋”：转折处要短促稳准，避免拖刀。</li>
+          <li>“花中有眼”：花心留白是视觉呼吸点，决定作品通透感。</li>
+          <li>“纹样有节奏”：主次纹理疏密变化，才能呈现民间美学韵律。</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>庄河剪纸数字展 · 让传统艺术在屏幕上继续呼吸</p>
+  </footer>
+
+  <script>
+    const layers = document.querySelectorAll(".paper-layer");
+    window.addEventListener("mousemove", (event) => {
+      const x = (event.clientX / window.innerWidth - 0.5) * 22;
+      const y = (event.clientY / window.innerHeight - 0.5) * 22;
+      layers.forEach((layer, i) => {
+        const depth = (i + 1) * 0.35;
+        layer.style.transform = `translate(${x * depth}px, ${y * depth}px) rotate(${x * 0.08}deg)`;
+      });
+    });
+
+    const cards = document.querySelectorAll(".card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add("in-view");
+        });
+      },
+      { threshold: 0.25 }
+    );
+    cards.forEach((card) => observer.observe(card));
+
+    const mainArtwork = document.getElementById("mainArtwork");
+    const mainCaption = document.getElementById("mainCaption");
+    const thumbs = document.querySelectorAll(".thumb");
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        const full = thumb.dataset.full;
+        const title = thumb.dataset.title;
+        if (!full) return;
+        mainArtwork.src = full;
+        mainCaption.textContent = title || "";
+        thumbs.forEach((item) => item.classList.remove("is-active"));
+        thumb.classList.add("is-active");
+      });
+    });
+
+    const timelineNodes = document.querySelectorAll(".node");
+    timelineNodes.forEach((node, index) => {
+      node.style.animationDelay = `${index * 0.15}s`;
+      observer.observe(node);
+    });
+  </script>
+</body>
+</html>
